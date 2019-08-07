@@ -15,283 +15,285 @@ Basic Porfolio 8.2.2019 by Codycodes
 --------------------------------------------------------------------------*/
 /* 1. Elements */
 html {
-   height: 100%
+  height: 100%
 }
 
 body {
-   color: #777777;
-   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-   background-image: url("../images/black_lozenge.png");
-   margin: 0 auto;
-   height: 100%;
+  color: #777777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  background-image: url("../images/black_lozenge.png");
+  margin: 0 auto;
+  height: 100%;
 }
 
 h1,
 h2,
 h3,
 h4 {
-   font-family: 'Georgia', Times, Times New Roman, serif;
-   color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
 }
 
 p {
-   line-height: 2rem;
+  line-height: 2rem;
 }
 
 hr {
-   display: block;
-   height: 1px;
-   border: 0;
-   border-top: 1px solid #ccc;
-   margin: 1em 0;
-   padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 a {
-   color: #4aaaa5;
+  color: #4aaaa5;
 }
 
 /*------------------------------------------------------------------------*/
 /* 2. Header  */
 #header {
-   background: #ffffff;
-   border-bottom: 8px solid #4aaaa5;
+  background: #ffffff;
+  border-bottom: 8px solid #4aaaa5;
 }
 
 /* Style the header and some padding */
 .navbar-links {
-   overflow: hidden;
-   padding: 20px 10px;
-   width: 960px;
-   margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 10px;
+  width: 960px;
+  margin: 0 auto;
 }
 
 /* Style the header links */
 .navbar-links a {
-   float: left;
-   color: black;
-   text-align: center;
-   padding: 12px;
-   text-decoration: none;
-   font-size: 18px;
-   line-height: 25px;
-   border-radius: 4px;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
 }
 
 /* Style the logo link i.e. name */
 .navbar-links a.logo {
-   background: #4aaaa5;
-   color: #ffffff;
+  background: #4aaaa5;
+  color: #ffffff;
 }
 
 /* Change the background color on mouse-over */
 .navbar-links a:hover {
-   background-color: #ddd;
-   color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 /* Style the active/current link*/
 .navbar-links a.active {
-   background-color: #4aaaa5;
-   color: white;
+  background-color: #4aaaa5;
+  color: white;
 }
 
 /* Float the link section to the right */
 .header-right {
-   float: right;
+  float: right;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
-   .navbar-links a {
-      float: none;
-      display: block;
-      text-align: left;
-   }
+  .navbar-links a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 
-   .header-right {
-      float: none;
-   }
+  .header-right {
+    float: none;
+  }
 }
 
 /*------------------------------------------------------------------------*/
 /* 3.Content */
 .container {
-   height: 100%
+  height: 100%
 }
 
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
-   float: left;
-   width: 30%;
-   height: 300px;
-   margin: 10px;
-   position: relative;
+  float: left;
+  width: 30%;
+  height: 300px;
+  margin: 10px;
+  position: relative;
 }
 
 /* Caption portfolio */
 .column h2 {
-   background: #4aaaa5;
-   color: #fff;
-   text-align: center;
-   position: absolute;
-   top: 0;
-   width: 100%;
-   margin: 0;
+  background: #4aaaa5;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0;
 }
 
 /* Clear floats after the columns */
 .row:after {
-   content: "";
-   display: table;
-   clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .section {
-   margin: 50px auto;
-   background: #ffffff;
-   border: 1px solid #dddddd;
-   padding: 20px;
-   min-height: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  min-height: 600px;
 }
 
 .about {
-   height: 300px;
-   margin: 30px 0px;
+  height: 300px;
+  margin: 30px 0px;
 }
 
 .section p {
-   background: #1f1f1f;
-   color: #f7f7f7;
-   text-align: justify;
-   border-radius: 5px;
-   height: 100%
+  background: #1f1f1f;
+  color: #f7f7f7;
+  text-align: justify;
+  border-radius: 5px;
 }
 
 /* image section */
 .face {
-   border-radius: 5px;
-   box-shadow: 3px 3px 5px 2px;
-   margin: 0px 20px 10px 0px;
-   width: 100%;
-   height: 100%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 2px;
+  margin: 0px 20px 10px 0px;
+  width: 100%;
+}
+
+.logo {
+  width: 200px;
 }
 
 .port {
-   background-repeat: no-repeat;
-   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .port-1 {
-   background-image: url("../images/ethan.jpg");
+  background-image: url("../images/ethan.jpg");
 }
 
 .port-2 {
-   background-image: url("../images/everly.jpg");
+  background-image: url("../images/everly.jpg");
 }
 
 .port-3 {
-   background-image: url("../images/family.jpg");
+  background-image: url("../images/family.jpg");
 }
 
 .port-4 {
-   background-image: url("../images/family2.jpeg");
+  background-image: url("../images/family2.jpeg");
 }
 
 .port-5 {
-   background-image: url("../images/family3.jpg");
+  background-image: url("../images/family3.jpg");
 }
 
 .port-6 {
-   background-image: url("../images/family4.jpg");
+  background-image: url("../images/family4.jpg");
 }
 
 /* social icons */
 .social-icons {
-   clear: both;
-   margin-top: 25px;
+  clear: both;
+  margin-top: 25px;
 }
 
 .btn-outline {
-   margin-top: 15px;
-   border: solid 1px #bbbbbb;
-   font-size: 24px;
-   color: #bbbbbb;
-   background: 0 0;
-   transition: all .3s ease-in-out;
+  margin-top: 15px;
+  border: solid 1px #bbbbbb;
+  font-size: 24px;
+  color: #bbbbbb;
+  background: 0 0;
+  transition: all .3s ease-in-out;
 }
 
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-   border: solid 1px #bbbbbb;
-   color: #000;
-   background: #bbbbbb;
+  border: solid 1px #bbbbbb;
+  color: #000;
+  background: #bbbbbb;
 }
 
 .btn-social {
-   display: inline-block;
-   width: 48px;
-   height: 48px;
-   border: 1px solid #bbbbbb;
-   border-radius: 100%;
-   text-align: center;
-   font-size: 24px;
-   line-height: 46px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #bbbbbb;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 46px;
 }
 
 .list-inline {
-   padding-left: 0;
-   list-style: none;
-   margin-left: -5px;
-   text-align: center;
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+  text-align: center;
 }
 
 .list-inline>li {
-   display: inline-block;
-   padding-left: 5px;
-   padding-right: 5px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .social-links {
-   -webkit-animation: fade-in-down 0.9s;
-   animation: fade-in-down 0.9s;
-   -webkit-animation-delay: 0.2s;
-   animation-delay: 0.2s;
+  -webkit-animation: fade-in-down 0.9s;
+  animation: fade-in-down 0.9s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 /* Animations */
 @-webkit-keyframes fade-in-down {
-   0% {
-      opacity: 0;
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px);
-   }
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 
-   100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-   }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 @keyframes fade-in-down {
-   0% {
-      opacity: 0;
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px);
-   }
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 
-   100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-   }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 /*------------------------------------------------------------------------*/
@@ -299,34 +301,34 @@ a {
 input[type=text],
 select,
 textarea {
-   width: 100%;
-   padding: 12px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   box-sizing: border-box;
-   margin-top: 6px;
-   margin-bottom: 16px;
-   resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type=submit] {
-   background-color: #4CAF50;
-   color: white;
-   padding: 12px 20px;
-   border: none;
-   border-radius: 4px;
-   cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 input[type=submit]:hover {
-   background-color: #45a049;
+  background-color: #45a049;
 }
 
 /*------------------------------------------------------------------------*/
 /* 5. Footer */
 #footer {
-   background: #666666;
-   text-align: center;
-   color: #ffffff;
-   border-top: 8px solid #4aaaa5;
+  background: #666666;
+  text-align: center;
+  color: #ffffff;
+  border-top: 8px solid #4aaaa5;
 }
