@@ -7,7 +7,7 @@
 
 cl33per.github.io made as about page. 
 
-See the working app here:
+See the working page here:
 
 http://cl33per.github.io/
 
