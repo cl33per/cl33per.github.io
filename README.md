@@ -1,5 +1,11 @@
 
 # cl33per.github.io
+
+![GitHub followers](https://img.shields.io/github/followers/cl33per?style=social)
+[![GitHub issues](https://img.shields.io/github/issues/cl33per/cl33per.github.io)](https://github.com/cl33per/cl33per.github.io/issues)
+![GitHub](https://img.shields.io/github/license/cl33per/cl33per.github.io)
+![GitHub top language](https://img.shields.io/github/languages/top/cl33per/cl33per.github.io)
+![GitHub last commit](https://img.shields.io/github/last-commit/cl33per/cl33per.github.io)
 ### Summary
 
 cl33per.github.io made as about my personal  working github porfolio page.
