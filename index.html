@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+        integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -119,7 +123,7 @@
                             <h4 class="sub-title">Hello, I’m</h4>
                             <h1 class="title">Cody Leeper</h1>
                             <p>Full Stack Web Developer & Sys Admin</p>
-                            <a class="main-btn" href="#work">View my Work</a>
+                            <!-- <a class="main-btn" href="#work">View my Work</a> -->
                         </div> <!-- header content right -->
                     </div>
                     <div class="col-lg-6 offset-xl-1">
@@ -213,72 +217,64 @@
                         </ul>
                     </div> <!-- about content -->
                 </div>
+
                 <div class="col-xl-5 offset-xl-1 col-lg-6">
                     <div class="about-skills pt-25">
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">NEXT.js</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">85</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="85"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">PHP</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">80</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="80"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">Agile Scrum</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">75</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="75"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
-                        <div class="skill-item mt-25">
-                            <div class="skill-header">
-                                <h6 class="skill-title">Azure</h6>
-                                <div class="skill-percentage">
-                                    <div class="count-box counted">
-                                        <span class="counter">60</span>
-                                    </div>
-                                    %
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="60"></div>
-                                </div>
-                            </div>
-                        </div> <!-- skill item -->
+                        <canvas id="myChart" width="200" height="200"></canvas>
+                        <script>
+                            var ctx = document.getElementById('myChart');
+                            var myChart = new Chart(ctx, {
+                                type: 'radar',
+                                data: {
+                                    labels: [
+                                        'FrontEnd',
+                                        'BackEnd',
+                                        'Networking',
+                                        'Systems Architecture',
+                                        'Project Mgmt',
+                                        'Middleware',
+                                        'Security'
+                                    ],
+                                    datasets: [{
+                                        label: 'Experience',
+                                        data: [70, 70, 85, 81, 80, 55, 70],
+                                        fill: true,
+                                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                        borderColor: 'rgb(255, 99, 132)',
+                                        pointBackgroundColor: 'rgb(255, 99, 132)',
+                                        pointBorderColor: '#fff',
+                                        pointHoverBackgroundColor: '#fff',
+                                        pointHoverBorderColor: 'rgb(255, 99, 132)'
+                                    }, {
+                                        label: 'Passion & Enjoyment',
+                                        data: [65, 80, 90, 69, 96, 77, 100],
+                                        fill: true,
+                                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                                        borderColor: 'rgb(54, 162, 235)',
+                                        pointBackgroundColor: 'rgb(54, 162, 235)',
+                                        pointBorderColor: '#fff',
+                                        pointHoverBackgroundColor: '#fff',
+                                        pointHoverBorderColor: 'rgb(54, 162, 235)'
+                                    }]
+                                },
+                                options: {
+                                    elements: {
+                                        line: {
+                                            borderWidth: 1
+                                        }
+                                    },
+                                    scales: {
+                                        r: {
+                                            angleLines: {
+                                                display: true
+                                            },
+                                            suggestedMin: 0,
+                                           suggestedMax: 100,
+                                        },
+                                    }
+                                },
+                            });
+                        </script>
                     </div> <!-- about skills -->
                 </div>
             </div> <!-- row -->
@@ -326,7 +322,8 @@
                     </div>
                     <div class="service-content">
                         <h4 class="service-title">Security Consulting</h4>
-                        <p>Networking and Business Security experience. Security+ Certified. Experienced as Azure Global Admin. Configuring all 0365 RBAC Management across multiple services, and systems. </p>
+                        <p>Networking and Business Security experience. Security+ Certified. Experienced as Azure Global
+                            Admin. Configuring all 0365 RBAC Management across multiple services, and systems. </p>
                     </div>
                 </div> <!-- single service -->
                 <!-- <div class="single-service text-center mt-30">
@@ -356,8 +353,8 @@
                         <h4 class="service-title">Consultancy and Support</h4>
                         <p>Business ownership experience leading to transparent and honest feedback.</p>
                     </div> -->
-                </div> <!-- single service -->
-            </div>
+            </div> <!-- single service -->
+        </div>
         </div> <!-- row -->
         </div> <!-- container -->
     </section>
@@ -388,124 +385,7 @@
     <!--====== CALL TO ACTION PART ENDS ======-->
 
     <!--====== WORK PART START ======-->
-    <!--
-    <section id="work" class="work-area pt-125 pb-130">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="section-title pb-25">
-                        <h2 class="title">My Recent Works</h2>
-                         <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/Perkinson Homes.png" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">WordPress Design</h3>
-                                <ul>
-                                    <li><a class="image-popup" href="assets/images/work/Perkinson Homes.png"><i class="lni-plus"></i></a></li>
-                                    <li><a href="https://perkinsonhomes.com/"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/CSI.png" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Web App </h3>
-                                <ul>
-                                    <li><a class="image-popup" href="assets/images/work/CSI.png"><i class="lni-plus"></i></a></li>
-                                    <li><a href="http://www.csiinc.org/sales/"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/FreshMoveMedia.png" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Web Design</h3>
-                                <ul>
-                                    <li><a class="image-popup" href="assets/images/work/FreshMoveMedia.png"><i class="lni-plus"></i></a></li>
-                                    <li><a href="https://freshmovemedia.com/"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-4.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Product Design</h3>
-                                <ul>
-                                    <li><a class="image-popup" href="assets/images/work/w-4.png"><i class="lni-plus"></i></a></li>
-                                    <li><a href="#"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-5.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Product Design</h3>
-                                <ul>
-                                    <li><a class="image-popup" href="assets/images/work/w-5.jpg"><i class="lni-plus"></i></a></li>
-                                    <li><a href="#"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> single work
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-6.jpg" alt="work">
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Product Design</h3>
-                                <ul>
-                                    <li><a class="image-popup" href="assets/images/work/w-6.jpg"><i class="lni-plus"></i></a></li>
-                                    <li><a href="#"><i class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="work-more text-center mt-50">
-                        <a class="main-btn" href="#">more works</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+
 
     <!--====== WORK PART ENDS ======-->
 
@@ -673,7 +553,6 @@
                 <div class="col-lg-8">
                     <div class="section-title text-center pb-25">
                         <h2 class="title">Get In Touch</h2>
-                        <p>Ready to start a lasting partnership together? Let's Connect!</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -685,7 +564,7 @@
                         </div>
                         <div class="contact-content">
                             <h6 class="contact-title">Address</h6>
-                            <p>Richmond Virginia, 23060</p>
+                            <p>Richmond, Virginia</p>
                         </div>
                     </div> <!-- contact box -->
                 </div>
@@ -707,7 +586,7 @@
                         </div>
                         <div class="contact-content">
                             <h6 class="contact-title">Email</h6>
-                            <p><a href="mailto:leeper08@gmail.com">leeper08@gmail.com</a></p>
+                            <p><a href="mailto:leepercodes@protonmail.com">leepercodes@protonmail.com</a></p>
                         </div>
                     </div> <!-- contact box -->
                 </div>
@@ -756,12 +635,11 @@
                             <a href="index.html">
                                 <img src="assets/images/signature.png" alt="Logo">
                             </a>
-                            <p class="mt-30"></p>
                             <ul>
-                                <li><a href="https://github.com/cl33per" target="_blank"><i
-                                            class="lni lni-github"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/cleeper92/" target="_blank"><i
-                                            class="lni lni-linkedin"></i></a></li>
+                                <li><a href="https://github.com/cl33per" target="_blank"><em
+                                            class="lni lni-github"></em></a></li>
+                                <li><a href="https://www.linkedin.com/in/cleeper92/" target="_blank"><em
+                                            class="lni lni-linkedin"></em></a></li>
                             </ul>
                         </div> <!-- footer content -->
                     </div>
@@ -775,7 +653,8 @@
                         <div class="copyright-text text-center pt-20">
                             <p>Copyright © <script type="text/javascript">
                                     document.write(new Date().getFullYear());
-                                </script> All rights reserved. <a href="https://codyleeper.com" rel="nofollow">Cody Leeper</a></p>
+                                </script> All rights reserved. <a href="https://codyleeper.com" rel="nofollow">Cody
+                                    Leeper</a></p>
                         </div> <!-- copyright text -->
                     </div>
                 </div> <!-- row -->
