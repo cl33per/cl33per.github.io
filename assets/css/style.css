@@ -1761,3 +1761,6 @@ p.form-message.success, p.form-message.error {
       cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
+.calendar{
+  width: 100% !important;
+}
